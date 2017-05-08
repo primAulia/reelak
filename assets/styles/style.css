@@ -7,3 +7,11 @@ body {
 section {
   padding: 100px 0;
 }
+
+.nonhome-page section {
+  padding: 25px 0 50px;
+}
+
+#partner-cta, #contact-page {
+  text-align: center;
+}
