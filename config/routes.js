@@ -46,6 +46,15 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
+  '/partners': {
+    view: 'pages/partnerships'
+  },
+  '/contacts': {
+    view: 'pages/contacts'
+  },
+  '/about': {
+    view: 'pages/about'
+  },
   '/products': {
     view: 'pages/products'
   },
