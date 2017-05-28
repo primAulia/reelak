@@ -2,10 +2,20 @@
 <div class="jumbotron">
   <div class="container">
     <h1>Films, out of the box, in everyday spaces.</h1>
-    <p>Reelak helps you engage with today’s young, modern audience through a fresh and unique take on the cinematic experience.</p>
   </div>
 </div>
-
+<section id="subheading">
+  <div class="container">
+    <p class="lead">
+      Reelak helps you engage with today’s young, modern audience through a fresh and unique take on the cinematic experience.
+    </p>
+    <p class="lead">
+      <a href="getting-started#download" class="btn btn-primary btn-lg">
+        About Us
+      </a>
+    </p>
+  </div>
+</section>
 <section id="services">
   <div class="container">
     <!-- Example row of columns -->
@@ -13,17 +23,17 @@
       <div class="col-md-4">
         <h2>Film Curation</h2>
         <p>Quirky, stirring, unforgettable films, from the vast and diverse library that is international cinema.</p>
-        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
       </div>
       <div class="col-md-4">
         <h2>Space Design</h2>
         <p>The cinema: uprooted, reimagined, and recreated within the context of everyday spaces.</p>
-        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
      </div>
       <div class="col-md-4">
         <h2>Bespoke Experience</h2>
         <p>Film, space, and everything in between: the signature Reelak experience, customised for you.</p>
-        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
       </div>
     </div>
   </div> <!-- /container -->
@@ -33,49 +43,89 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 text-center">
-          <h2 class="section-heading">Overheard about us</h2>
-          <hr class="light">
-          <blockquote class="blockquote-reverse">
-            <p>
-              "While cinemas will shelter you from the worst of the weather elements (read: the haze), they do next to nothing to enhance your sense of adventure. That’s where Reelak steps in."
-            </p>
-            <footer><cite title="The Business Times">The Business Times</cite></footer>
-          </blockquote>
-          <blockquote>
-            <p>"Impress your date with an arthouse movie screening under the stars."</p>
-            <footer><cite title="Source Title">SG Magazine</cite></footer>
-          </blockquote>
+        <h2 class="section-heading">Overheard about us</h2>
+        <hr class="light">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <blockquote>
+                <p>
+                  "While cinemas will shelter you from the worst of the weather elements (read: the haze), they do next to nothing to enhance your sense of adventure. That’s where Reelak steps in."
+                </p>
+                <footer><cite title="The Business Times">The Business Times</cite></footer>
+              </blockquote>
+            </div>
+            <div class="item">
+              <blockquote>
+                <p>
+                  "While cinemas will shelter you from the worst of the weather elements (read: the haze), they do next to nothing to enhance your sense of adventure. That’s where Reelak steps in."
+                </p>
+                <footer><cite title="The Business Times">The Business Times</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="out-team">
+<!-- TODO: Partialize this -->
+<section id="newsletter">
   <div class="container">
-    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-6">
+        <img src="https://unsplash.it/458/354" alt="">
+      </div>
+      <div class="col-md-6 newsletter-container">
+        <h2>Subscribe to our newsletter!</h2>
+        <p>
+          Be the first the hear about our new offerings and keep up to date with
+          our events.
+        </p>
+        <form>
+          <div class="form-group">
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+          </div>
+          <button type="submit" class="btn btn-primary">Sign up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--section id="out-team">
+  <div class="container">
     <div class="row text-center">
       <h2 class="section-heading">Our Team</h2>
       <hr class="light">
       <div class="col-md-3">
         <h2>Prima Aulia Gusta</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p><a class="btn btn-default" href="#" role="button">TODO: change icons</a></p>
+        <p><a class="btn btn-primary" href="#" role="button">TODO: change icons</a></p>
       </div>
       <div class="col-md-3">
         <h2>Elaine Neo</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p><a class="btn btn-default" href="#" role="button">TODO: change icons</a></p>
+        <p><a class="btn btn-primary" href="#" role="button">TODO: change icons</a></p>
       </div>
       <div class="col-md-3">
         <h2>Aqila Abu</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p><a class="btn btn-default" href="#" role="button">TODO: change icons</a></p>
+        <p><a class="btn btn-primary" href="#" role="button">TODO: change icons</a></p>
       </div>
       <div class="col-md-3">
         <h2>Putra Muskita</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p><a class="btn btn-default" href="#" role="button">TODO: change icons</a></p>
+        <p><a class="btn btn-primary" href="#" role="button">TODO: change icons</a></p>
       </div>
     </div>
-  </div> <!-- /container -->
+  </div-->
 </section>
