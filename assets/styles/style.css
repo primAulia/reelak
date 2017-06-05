@@ -1,17 +1,31 @@
-/* Move down content because we have a fixed navbar that is 50px tall */
-body {
-  padding-top: 50px;
-  padding-bottom: 20px;
+/* Navigation Menu Setup */
+.nav-absolute {
+  position: absolute;
+  width: 100%;
 }
 
-.jumbotron, section {
-  /*padding: 100px 0;*/
-  height: 100vh;
-  width: 100vw;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align: center;
+.nav-absolute .container-fluid {
+  text-align: right;
+}
+
+.nav-absolute .h1 {
+  position: absolute;
+}
+
+.nav-hidden .list-inline li {
+  vertical-align: top;
+}
+
+.menu-opener {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: inline-block;
+  line-height: 48px;
+  text-transform: lowercase;
+  font-size: 24px;
+  padding-right: 50px;
+
+  background: url(http://www.mrmarcelschool.com/content/images/icon-menu.png) no-repeat center right;
 }
 
 .newsletter-container {
@@ -27,6 +41,16 @@ body {
   .carousel-indicators {
     bottom: 0;
   }
+}
+
+.jumbotron, section {
+  /*padding: 100px 0;*/
+  height: 100vh;
+  width: 100vw;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align: center;
 }
 
 .carousel-indicators li {
