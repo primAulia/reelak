@@ -1,4 +1,6 @@
 (function () {
+  'use strict'
+
   var vpw = $(window).width()
   var vph = $(window).height()
   // alert(vpw)
@@ -11,8 +13,8 @@
 
     $.each($allAs, function (index, elem) {
       $(elem).toggleClass('changecolor')
-    });
-
+    })
+    
     $navAbsolute.toggleClass('popdown')
   })
 }($))
