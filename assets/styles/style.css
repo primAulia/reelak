@@ -1,18 +1,51 @@
 /* Navigation Menu Setup */
-.nav-absolute {
+.nav-pointer, .nav-absolute {
   position: absolute;
   width: 100%;
 }
 
-.nav-absolute .container-fluid {
+.nav-pointer {
+  z-index: 1;
+}
+
+.nav-pointer a {
+  transition: color 0.3s;
+}
+
+.nav-pointer .changecolor {
+  color: white;
+}
+
+.nav-pointer .container-fluid {
   text-align: right;
 }
 
-.nav-absolute .h1 {
+.nav-pointer .h1 {
   position: absolute;
 }
 
-.nav-hidden .list-inline li {
+.nav-absolute {
+  position: absolute;
+  background: #17274D;
+  margin-top: -221px;
+  transition: margin-top 0.3s;
+}
+
+.nav-absolute.popdown {
+  margin-top: 0;
+}
+
+.nav-absolute a, .nav-absolute h2 {
+  color: white;
+}
+
+.nav-absolute .accordion-menu {
+  padding-top: 44px;
+  padding-bottom: 44px;
+  margin-bottom: 0;
+}
+
+.nav-absolute .accordion-menu li {
   vertical-align: top;
 }
 
