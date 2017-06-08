@@ -14,7 +14,16 @@
     $.each($allAs, function (index, elem) {
       $(elem).toggleClass('changecolor')
     })
-    
+
     $navAbsolute.toggleClass('popdown')
+  })
+
+  $('.reelak-ig').slick({
+    dots: false,
+    infinite: true,
+    fade: true,
+    cssEase: 'linear',
+    autoplay: true,
+    autoplaySpeed: 2000
   })
 }($))
