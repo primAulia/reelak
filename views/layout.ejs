@@ -108,9 +108,9 @@
             <div class="row">
               <ul class="list-unstyled list-inline col-md-offset-2 accordion-menu">
                 <li class="module of_3">
-                  <h2>About</h2>
+                  <h2><a href="/about">About</a></h2>
                   <ul class="list-unstyled">
-                    <li><a href="#">Meet the Team</a></li>
+                    <li><a href="#meet-the-team">Meet the Team</a></li>
                   </ul>
                 </li>
                 <li class="module of_3">
@@ -138,6 +138,33 @@
     </header>
 
     <%- body %>
+
+    <!-- TODO: Partialize this -->
+    <section id="newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 reelak-ig">
+            <div><img data-lazy="/images/carousel1.jpg" width="500" alt=""></div>
+            <div><img data-lazy="/images/carousel2.jpg" width="500" alt=""></div>
+            <div><img data-lazy="/images/carousel3.jpg" width="500" alt=""></div>
+            <div><img data-lazy="/images/carousel4.jpg" width="500" alt=""></div>
+          </div>
+          <div class="col-md-6 newsletter-container">
+            <h2>Subscribe to our newsletter!</h2>
+            <p>
+              Be the first the hear about our new offerings and keep up to date with
+              our events.
+            </p>
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+              <button type="submit" class="btn btn-primary">Sign up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer id="footer">
       <div class="container footer-links">

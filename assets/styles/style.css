@@ -61,6 +61,7 @@
   background: url(http://www.mrmarcelschool.com/content/images/icon-menu.png) no-repeat center right;
 }
 
+/* Footer Styles*/
 .newsletter-container {
   text-align: left;
 }
@@ -69,8 +70,14 @@
   text-align: right;
 }
 
-footer:focus {
+:focus {
   outline: none;
+}
+
+/* Custom Classes */
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* Override Bootstrap Vars */
@@ -80,6 +87,10 @@ footer:focus {
   }
 }
 
+.jumbotron {
+  background: none;
+}
+
 .jumbotron, section {
   /*padding: 100px 0;*/
   height: 100vh;
@@ -87,6 +98,9 @@ footer:focus {
   display:flex;
   justify-content:center;
   align-items:center;
+}
+
+.horizontal-center {
   text-align: center;
 }
 
