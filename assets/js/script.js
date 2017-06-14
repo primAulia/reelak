@@ -3,8 +3,6 @@
 
   var vpw = $(window).width()
   var vph = $(window).height()
-  // alert(vpw)
-
   var $menuOpener = $('.menu-opener')
 
   $menuOpener.on('click', function () {
@@ -63,5 +61,7 @@
         })
       }
     }
+
+    $menuOpener.trigger('click')
   })
 }($))
