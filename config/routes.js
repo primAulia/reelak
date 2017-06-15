@@ -46,22 +46,23 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/partners': {
-    view: 'pages/partnerships'
-  },
-  '/contacts': {
-    view: 'pages/contacts'
+  '/contact': {
+    view: 'pages/contact'
   },
   '/about': {
     view: 'pages/about'
   },
-  '/products': {
-    view: 'pages/products'
-  },
-  '/events': {
-    view: 'pages/events'
-  },
-  '/blogs': {
-    view: 'pages/blogs'
-  },
+  // Frozen pages
+  // '/partners': {
+  //   view: 'pages/partnerships'
+  // },
+  // '/products': {
+  //   view: 'pages/products'
+  // },
+  // '/events': {
+  //   view: 'pages/events'
+  // },
+  // '/blogs': {
+  //   view: 'pages/blogs'
+  // },
 };
