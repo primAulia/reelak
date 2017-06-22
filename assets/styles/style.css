@@ -27,12 +27,13 @@
 .nav-absolute {
   position: absolute;
   background: #17274D;
-  margin-top: -221px;
-  transition: margin-top 0.3s;
+  margin-top: -316px;
+  transition: margin-top 0.3s, padding 0.3s;
 }
 
 .nav-absolute.popdown {
   margin-top: 0;
+  padding-bottom: 40px;
 }
 
 .nav-absolute a, .nav-absolute h2 {
