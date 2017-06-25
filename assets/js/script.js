@@ -79,7 +79,7 @@
     console.log(chosenPanel);
 
     $.each($allPanels, function (index, elem) {
-      $(elem).toggleClass('displayed')
+      $(elem).removeClass('displayed')
     })
 
     $(chosenPanel).toggleClass('displayed')
