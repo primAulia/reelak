@@ -3,7 +3,10 @@
 
   var vpw = $(window).width()
   var vph = $(window).height()
+  var $window = $(window)
   var $menuOpener = $('.menu-opener')
+  var $serviceTabs = $('.service-tabs')
+  var $servicePanelSection = $('.service-panels-container')
 
   $menuOpener.on('click', function () {
     var $navAbsolute = $(this).parents('header').find('.nav-absolute')
@@ -13,17 +16,8 @@
       $(elem).toggleClass('changecolor')
     })
 
+    $(this).toggleClass('opened')
     $navAbsolute.toggleClass('popdown')
-  })
-
-  $('.reelak-ig').slick({
-    dots: false,
-    infinite: true,
-    fade: true,
-    cssEase: 'linear',
-    autoplay: true,
-    autoplaySpeed: 2000,
-    lazyLoad: 'ondemand'
   })
 
   // Animate all links with hashes
@@ -62,6 +56,43 @@
       }
     }
 
+    // hide navi if scroll to anchor happened
     $menuOpener.trigger('click')
   })
+
+  // hide nav is scrolling happened
+  $window.on('scroll', function () {
+    if ($menuOpener.hasClass('opened')) {
+      $menuOpener.trigger('click')
+    }
+  })
+
+  // service tabs switching
+  $serviceTabs.on('click', function (e) {
+    e.preventDefault()
+
+    $servicePanelSection.addClass('opened')
+
+    var chosenTab = parseInt($(this).data('tab')) - 1
+    var $allPanels = $servicePanelSection.find('.service-panels')
+    var chosenPanel = $servicePanelSection.find('.service-panels')[chosenTab]
+    console.log(chosenPanel);
+
+    $.each($allPanels, function (index, elem) {
+      $(elem).toggleClass('displayed')
+    })
+
+    $(chosenPanel).toggleClass('displayed')
+  })
+
+  // UNUSED NOW
+  // $('.reelak-ig').slick({
+  //   dots: false,
+  //   infinite: true,
+  //   fade: true,
+  //   cssEase: 'linear',
+  //   autoplay: true,
+  //   autoplaySpeed: 2000,
+  //   lazyLoad: 'ondemand'
+  // })
 }($))
