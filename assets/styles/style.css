@@ -121,7 +121,7 @@ section.service-panels-container {
 }
 
 section.service-panels-container.opened {
-  height: 1000px;
+  height: 600px;
   position: relative;
 }
 
