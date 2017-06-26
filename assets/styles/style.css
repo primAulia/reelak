@@ -121,11 +121,14 @@ section.service-panels-container {
 }
 
 section.service-panels-container.opened {
-  height: 400px;
+  height: 1000px;
+  position: relative;
 }
 
 .service-panels {
   opacity: 0;
+  /*position: absolute;*/
+  /*top: 20px;*/
   transition: opacity 0.2s ease-in;
 }
 
@@ -153,4 +156,8 @@ section.service-panels-container.opened {
 
 #partner-cta, #contact-page {
   text-align: center;
+}
+
+.footer-row {
+  margin-bottom: 10px;
 }

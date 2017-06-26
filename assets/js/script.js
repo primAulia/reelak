@@ -7,6 +7,7 @@
   var $menuOpener = $('.menu-opener')
   var $serviceTabs = $('.service-tabs')
   var $servicePanelSection = $('.service-panels-container')
+  var $serviceFormChoice = $('.service-form-choice')
 
   $menuOpener.on('click', function () {
     var $navAbsolute = $(this).parents('header').find('.nav-absolute')
@@ -73,16 +74,18 @@
 
     $servicePanelSection.addClass('opened')
 
-    var chosenTab = parseInt($(this).data('tab')) - 1
+    var chosenTab = parseInt($(this).data('tab'))
     var $allPanels = $servicePanelSection.find('.service-panels')
-    var chosenPanel = $servicePanelSection.find('.service-panels')[chosenTab]
-    console.log(chosenPanel);
+    // data-tab is 1-indexed, array is 0-indexed
+    var chosenPanel = $servicePanelSection.find('.service-panels')[chosenTab - 1]
 
     $.each($allPanels, function (index, elem) {
       $(elem).removeClass('displayed')
     })
 
     $(chosenPanel).toggleClass('displayed')
+
+    $('.service-form-choice :nth-child(' + chosenTab + ')').prop('selected', true);
   })
 
   // UNUSED NOW
