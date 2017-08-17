@@ -166,3 +166,34 @@ section.service-panels-container .service-panels-row {
 .footer-row {
   margin-bottom: 10px;
 }
+
+/* ABOUT US */
+.about-galleries {
+  background-color: #CBE9E4;
+}
+
+.about-galleries img {
+  margin: 40px 0;
+}
+
+.about-galleries img.split {
+  display: inline-block;
+  margin: 40px 20px;
+}
+
+/* TEAM */
+
+.meet-the-team {
+  background-color: #F5EC85;
+}
+
+/* PARTNERS */
+.partners {
+  margin: 20px 0 80px;
+}
+
+/* ABOUT PAGE GENERAL */
+
+.meet-the-team .row, .partners .row {
+  margin: 40px 0;
+}
